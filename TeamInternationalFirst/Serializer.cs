@@ -19,14 +19,14 @@ namespace TeamInternationalFirst
                 "Winner: \n" +
                 "TeamId: " + winner.TeamId +
                 "\nTeam score: " + winner.getTeamScore() +
-                "\nLooser: \n" +
+                "\nLoser: \n" +
                 "TeamId: " + loser.TeamId +
                 "\nTeam score: " + loser.getTeamScore() +
                 "\nDraw: " + draw;
                 
             Console.WriteLine(result);
 
-            Console.WriteLine("\nAdditional:\nWinner: " + winner.ToString() + "\nLooser" + loser.ToString());
+            Console.WriteLine("\nAdditional:\nWinner: \n" + winner.ToString() + "\nLoser: \n" + loser.ToString());
         }
     }
 }

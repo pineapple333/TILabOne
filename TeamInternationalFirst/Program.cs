@@ -21,7 +21,12 @@ namespace TeamInternationalFirst
                 if (int.TryParse(Console.ReadLine(), out res))
                     if (res == 1)
                         break;
-                gh.RunGame(TeamType.Football);
+                Console.WriteLine("Which team would you like to choose ? \nFootball - 0\nBasketball - 1");
+                if (int.TryParse(Console.ReadLine(), out res))
+                    if (res == 0)
+                        gh.RunGame(TeamType.Football);
+                    else if (res == 1)
+                        gh.RunGame(TeamType.Basketball);
                 Console.ReadLine();
             }
         }
