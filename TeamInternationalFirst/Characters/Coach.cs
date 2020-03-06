@@ -8,8 +8,6 @@ namespace TeamInternationalFirst.Characters
 {
     class Coach : Character
     {
-        private string name;
-        private double qualification;
         private double debuff;
 
         public Coach()
@@ -30,12 +28,12 @@ namespace TeamInternationalFirst.Characters
         public override string Name
         {
             get { return this.name; }
-            set { this.name = value; }
+            protected set { this.name = value; }
         }
         public override double Qualification
         {
             get { return this.qualification; }
-            set { this.qualification = value * this.Debuff; } // I can filter the input here
+            protected set { this.qualification = value * this.Debuff; } // I can filter the input here
         } 
 
         private double Debuff

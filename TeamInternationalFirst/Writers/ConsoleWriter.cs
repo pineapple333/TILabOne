@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TeamInternationalFirst.Teams;
 
-namespace TeamInternationalFirst
+namespace TeamInternationalFirst.Writers
 {
-    class Serializer
+    class ConsoleWriter : IWriter
     {
         public void OnGameFinished(object source, GameFinishedEventArgs gameFinishedEventArgs)
         {
@@ -23,7 +23,7 @@ namespace TeamInternationalFirst
                 "TeamId: " + loser.TeamId +
                 "\nTeam score: " + loser.getTeamScore() +
                 "\nDraw: " + draw;
-                
+
             Console.WriteLine(result);
 
             Console.WriteLine("\nAdditional:\nWinner: \n" + winner.ToString() + "\nLoser: \n" + loser.ToString());

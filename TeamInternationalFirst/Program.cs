@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TeamInternationalFirst.Teams;
+using TeamInternationalFirst.Writers;
 
 namespace TeamInternationalFirst
 {
@@ -15,7 +16,8 @@ namespace TeamInternationalFirst
         static void Main(string[] args)
         {
             GameHandler gh = new GameHandler();
-            gh.GameFinished += new Serializer().OnGameFinished;
+            gh.GameFinished += new ConsoleWriter().OnGameFinished;
+            gh.GameFinished += new JSONFileWriter().OnGameFinished;
             while (true)
             {
                 Console.WriteLine("To break enter 1");

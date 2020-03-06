@@ -8,8 +8,12 @@ namespace TeamInternationalFirst
 {
     public abstract class Character
     {
-        public abstract string Name { get; set; }
-        public abstract double Qualification { get; set; }
+
+        protected string name;
+        protected double qualification;
+
+        public abstract string Name { get; protected set; }
+        public abstract double Qualification { get; protected set; }
         public abstract override string ToString();
     }
 }

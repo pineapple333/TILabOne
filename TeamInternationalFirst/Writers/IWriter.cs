@@ -7,10 +7,8 @@ using TeamInternationalFirst.Teams;
 
 namespace TeamInternationalFirst
 {
-    public class GameFinishedEventArgs: EventArgs
+    public interface IWriter
     {
-        public Boolean Draw { get; set; }
-        public Team Winner { get; set; }
-        public Team Loser { get; set; }
+        void OnGameFinished(object source, GameFinishedEventArgs gameFinishedEventArgs);
     }
 }
