@@ -7,7 +7,7 @@ using TeamInternationalFirst.MyExceptions;
 
 namespace TeamInternationalFirst.Teams
 {
-    abstract class Team
+    public abstract class Team
     {
         public abstract int TeamId { get; }
 

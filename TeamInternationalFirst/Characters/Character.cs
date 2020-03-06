@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TeamInternationalFirst
 {
-    abstract class Character
+    public abstract class Character
     {
         public abstract string Name { get; set; }
         public abstract double Qualification { get; set; }

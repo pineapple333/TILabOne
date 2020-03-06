@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TeamInternationalFirst</RootNamespace>
     <AssemblyName>TeamInternationalFirst</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,9 +46,12 @@
   <ItemGroup>
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Coach.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="GameFinishedEventArgs.cs" />
+    <Compile Include="Games\BaseGame.cs" />
+    <Compile Include="Games\GameFinishedEventArgs.cs" />
     <Compile Include="GameHandler.cs" />
+    <Compile Include="Games\GameProducer.cs" />
+    <Compile Include="Games\LongGame.cs" />
+    <Compile Include="Games\ShortGame.cs" />
     <Compile Include="MyCollection\MyCollection.cs" />
     <Compile Include="MyCollection\Node.cs" />
     <Compile Include="MyExceptions\BadTeamException.cs" />

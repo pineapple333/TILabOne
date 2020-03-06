@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TeamInternationalFirst
 {
-    class MyCollection<T>: IEnumerable<T>
+    public class MyCollection<T>: IEnumerable<T>
     {
         private int length = 0;
         private int iter = 0; // the actual number of elements

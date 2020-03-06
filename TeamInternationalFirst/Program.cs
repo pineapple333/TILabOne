@@ -8,6 +8,8 @@ using TeamInternationalFirst.Teams;
 namespace TeamInternationalFirst
 {
     public enum TeamType { Football = 11, Basketball = 7}
+    public enum GameType { LongGame, ShortGame}
+
     class Program
     {
         static void Main(string[] args)
@@ -27,7 +29,6 @@ namespace TeamInternationalFirst
                         gh.RunGame(TeamType.Football);
                     else if (res == 1)
                         gh.RunGame(TeamType.Basketball);
-                Console.ReadLine();
             }
         }
     }
